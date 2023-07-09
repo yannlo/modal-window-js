@@ -5,77 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal windows</title>
     <script type="module" src="app.js"></script>
-    <style>
-        body, html{
-            margin: 0;
-            padding: 0;
-        }
-
-        *{
-            box-sizing: border-box;
-        }
-
-        .modal{
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, .8);
-            animation: fadeIn .3s both;
-        }
-
-        .modal-wrapper{
-            overflow: auto;
-            background-color: white;
-            max-width: calc(100vw - 20px);
-            max-height: calc(100vh - 50px);
-            width: 600px;
-            padding: 20px;
-            animation: slideFromTop .3s both .1s;
-        }
-
-        .modal-close{
-            display: none;
-        }
-        .modal-animation{
-            animation: fadeOut .3s both .1s;
-        }
-        .modal .modal-animation{
-            animation: slideFromOut .3s both .1s;
-        }
-
-        @keyframes fadeIn {
-            from{ opacity: 0;}
-            to{ opacity: 1; }
-        }
-
-        @keyframes slideFromTop {
-            from{ transform: translateY(-50px);}
-            to{ transform: translateY(0); }
-        }
-
-
-        @keyframes fadeOut {
-            from{ opacity: 1; }
-            to{ opacity: 0;}
-        }
-
-        @keyframes slideFromBottom {
-            from{ transform: translateY(0); }
-            to{ transform: translateY(50px);}
-        }
-    </style>
 </head> 
 <body>
-    <a href="#modal1" class="js-modal">Boite modal standard</a>
-    <a href="modal.html#modal2" class="js-modal">Boite modal ajax</a>
-
     <aside 
-        id='modal1'
+        id='modal2'
         class="modal modal-close"
         aria-hidden="true"
         role="dialog"
@@ -84,7 +17,7 @@
         aria-labelledby="modal1-title">
         <div class="modal-wrapper">
             <button class="js-close-modal">Fermer la boite modal</button>
-            <h1 id="modal1-title">Condition d'utilisation</h1>
+            <h1 id="modal1-title">Condition d'utilisation 2</h1>
             <p>Bender?! You stole the atom. Stop it, stop it. It's fine. I will 'destroy' you! It must be wonderful. Fry, we have a crate to deliver. Morbo will now introduce tonight's candidates… PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon.</p>
             <p>I was having the most   <a href="#">wonderful dream.</a> <strong> Except you were there, and you were there, and you were there!</strong> <em> I had more, but you go ahead.</em> I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness.</p>
             <h2>Is the Space Pope reptilian!?</h2>
@@ -118,5 +51,6 @@
             <p>Shut up and get to the point! I videotape every customer that comes in here, so that I may blackmail them later. It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?</p> 
         </div>
     </aside>
+
 </body>
 </html>
